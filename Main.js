@@ -33,3 +33,13 @@ function myName(obj){
 function mySurname(obj){
     obj.innerHTML="Işık"
 }
+
+    /*
+    
+    Tarih göstermek için Date fonksiyonunu kullandık
+    
+    **/ 
+document.getElementById("tarihGoster").onclick=tarihGosterici;
+function tarihGosterici(){
+    document.getElementById("tarih").innerHTML=Date();
+}
