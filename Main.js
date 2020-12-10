@@ -8,7 +8,7 @@ for(let i = 0; i < eleman.length; i++){
             eleman[i].style.color="black";
         });
        
-        eleman[i].addEventListener("click",()=>{
+        eleman[i].addEventListener("click",()=>{    //classList ile css clası tanımlandı
             eleman[i].classList.toggle("benimsin"); //toggle aç kapa gibi kullanılabilir
         });
             
@@ -24,3 +24,12 @@ ad.addEventListener("mouseover",()=>{
 ad.addEventListener("mouseout",()=>{
 ad.style.backgroundColor="white";
 })
+
+
+function myName(obj){
+    obj.innerHTML="Mehmet Sait"
+}
+
+function mySurname(obj){
+    obj.innerHTML="Işık"
+}
