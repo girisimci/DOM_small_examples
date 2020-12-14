@@ -43,3 +43,13 @@ document.getElementById("tarihGoster").onclick=tarihGosterici;
 function tarihGosterici(){
     document.getElementById("tarih").innerHTML=Date();
 }
+
+/**
+ * Burada dom ile yeni bir text eklemeyi öğrendik.
+ */
+let parag=document.createElement("p");
+let node=document.createTextNode("Sonradan Eklenen");
+
+parag.appendChild(node);
+let element=document.getElementById("div1");
+element.appendChild(parag);
